@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        String input = "Akil";
+        LinkedList<Character> linkedList = new LinkedList<>();
+        for (char c : input.toCharArray()) {
+            linkedList.addFirst(c);
+            System.out.println(linkedList);
+        }
+        StringBuilder reversed = new StringBuilder();
+        for (char c : linkedList) {
+            reversed.append(c);
+        }
+        System.out.println(reversed.toString());
+    }
+}
